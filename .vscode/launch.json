@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "app",
+        "type": "dart",
+        "request": "launch",
+        "flutterMode": "debug",
+        "program": "lib/main.dart",
+        "args": [
+          "--web-renderer",
+          "html",
+          "--web-hostname",
+          "localhost",
+          "--web-port",
+          "5000"
+        ]
+      },
+     {
+        "name": "app-debug",
+        "type": "dart",
+        "request": "launch",
+        "flutterMode": "debug",
+        "program": "lib/main.dart",
+        "args": []
+      },
+    ]
+  }
+  
+  
