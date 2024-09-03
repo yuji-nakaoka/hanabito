@@ -55,6 +55,7 @@ extension BuildContextEx on BuildContext {
   Color get surfaceTint => _colorScheme.surfaceTint;
 
   /// テキストテーマを返す
+  /// https://api.flutter.dev/flutter/material/TextTheme-class.html
   TextTheme get _textTheme => Theme.of(this).textTheme;
   TextStyle? get displayLarge => _textTheme.displayLarge;
   TextStyle? get displayMedium => _textTheme.displayMedium;
