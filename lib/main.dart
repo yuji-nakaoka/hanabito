@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: 'Sawarabi_Gothic',
       ),
+      darkTheme: ThemeData.dark(),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
