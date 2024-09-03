@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hanabito/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF850004)),
         useMaterial3: true,
+        fontFamily: 'Sawarabi_Gothic',
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -42,7 +44,12 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: Text(
+          widget.title,
+          style: context.titleLarge!.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       body: Center(
         child: Column(
