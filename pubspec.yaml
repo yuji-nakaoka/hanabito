@@ -33,8 +33,13 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
   fonts:
     - family: Sawarabi_Gothic
       fonts:
         - asset: assets/font/Sawarabi_Gothic/SawarabiGothic-Regular.ttf
           weight: 400
+
+  assets:
+    - assets/image/
+    - assets/icon/

@@ -1,7 +1,8 @@
-/// Dart Recommended Settings: https://dartcode.org/docs/recommended-settings/
 {
   "debug.openDebug": "openOnDebugBreak",
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.renderWhitespace": "all",
   "editor.renderControlCharacters": true,
   "editor.minimap.enabled": false,
@@ -18,12 +19,12 @@
       "source.organizeImports": "always",
       "source.addMissingImports": "always",
       "quickfix.insertSemicolon": "always",
-      "source.fixAll": "always",
+      "source.fixAll": "always"
     }
   },
   "[css]": {
     "editor.formatOnSave": true,
-    "editor.formatOnType": true,
+    "editor.formatOnType": true
   },
   "dart.flutterSdkPath": ".fvm/versions/3.24.1",
   "dart.debugSdkLibraries": false,
@@ -50,4 +51,10 @@
     "readme.*": "authors, backers.md, changelog*, citation*, code_of_conduct.md, codeowners, contributing.md, contributors, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors.md",
     "*.dart": "$(capture).g.dart, $(capture).gr.dart, $(capture).freezed.dart"
   },
+  "cSpell.words": [
+    "hanabi",
+    "hanabito",
+    "roggle",
+    "Sawarabi"
+  ]
 }
