@@ -7,11 +7,11 @@ targets:
           checked: true
         generate_for:
           include:
-            - lib/models/**/*.dart
+            - lib/features/**/*.dart
       freezed:
         generate_for:
           include:
-            - lib/models/**/*.dart
+            - lib/features/**/*.dart
       riverpod_generator:
         generate_for:
           include:
