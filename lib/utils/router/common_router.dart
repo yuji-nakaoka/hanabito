@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
+import 'package:hanabito/presentation/screens/event/event_screen.dart';
 import 'package:hanabito/presentation/screens/home/home_screen.dart';
 import 'package:hanabito/utils/router/app_route.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -15,13 +16,22 @@ GoRouter commonRouter(CommonRouterRef ref) {
     initialLocation: AppRoute.home.path,
 
     /// ルートの定義
-    routes: [
+    routes: <RouteBase>[
       GoRoute(
         path: AppRoute.home.path,
         name: AppRoute.home.name,
         builder: (BuildContext context, GoRouterState state) {
           return const HomeScreen();
         },
+        routes: [
+          GoRoute(
+            path: AppRoute.event.name,
+            name: AppRoute.event.name,
+            builder: (BuildContext context, GoRouterState state) {
+              return const EventScreen();
+            },
+          ),
+        ],
       ),
     ],
   );

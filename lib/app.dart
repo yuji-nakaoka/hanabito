@@ -33,6 +33,7 @@ class App extends ConsumerWidget {
             fontWeight: FontWeight.bold,
             color: context.onPrimary,
           ),
+          iconTheme: IconThemeData(color: context.onPrimary),
         ),
       ),
     );
