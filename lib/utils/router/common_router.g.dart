@@ -6,7 +6,7 @@ part of 'common_router.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$commonRouterHash() => r'2160f0ed14c403990d4daa56846654b1f1065c54';
+String _$commonRouterHash() => r'1b28f076a42e599a06fbe91ee60b10c25201a646';
 
 ///  ルートの設定を提供する
 ///

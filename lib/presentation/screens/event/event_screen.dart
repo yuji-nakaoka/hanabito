@@ -4,6 +4,7 @@ import 'package:hanabito/presentation/foundations/material.dart';
 import 'package:hanabito/presentation/organisms/custom_app_bar.dart';
 import 'package:hanabito/presentation/screens/event/common/event_style.dart';
 import 'package:hanabito/presentation/screens/event/common/event_text.dart';
+import 'package:hanabito/presentation/screens/event/parts/menu_part.dart';
 
 /// イベント情報画面
 class EventScreen extends StatelessWidget {
@@ -17,7 +18,7 @@ class EventScreen extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            const Gap(EventStyle.five),
+            const Gap(EventStyle.thirty),
 
             /// 上段タイトル
             Text(
@@ -27,9 +28,10 @@ class EventScreen extends StatelessWidget {
                 color: context.onPrimary,
               ),
             ),
-            const Gap(EventStyle.fifteen),
+            const Gap(EventStyle.thirty),
 
             /// メニューパート
+            const EventMenuPart(),
           ],
         ),
       ),
