@@ -49,8 +49,8 @@ class EventMenuPart extends ConsumerWidget {
         },
         error: (err, stack) => Center(
           child: Text(
-            'Error: $err',
-            style: const TextStyle(color: Colors.red),
+            '$err',
+            style: TextStyle(color: context.error),
           ),
         ),
         loading: () => const Center(
